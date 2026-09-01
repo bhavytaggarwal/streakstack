@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------------------------------------------------------------------------
+# Xcode — user-specific state
+# Everything under xcuserdata is per-developer (window layout, breakpoints,
+# scheme selection). Shared schemes under xcshareddata SHOULD be committed.
+# ---------------------------------------------------------------------------
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# ---------------------------------------------------------------------------
+# Build products
+# ---------------------------------------------------------------------------
+build/
+DerivedData/
+*.o
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+*.app
+
+# ---------------------------------------------------------------------------
+# Swift Package Manager
+# Package.resolved IS committed for an app target — it pins dependency versions.
+# ---------------------------------------------------------------------------
+.build/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+Packages/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# ---------------------------------------------------------------------------
+# Dependency managers (unused today, here so a future addition is covered)
+# ---------------------------------------------------------------------------
+Pods/
+Carthage/Build/
+
+# ---------------------------------------------------------------------------
+# Secrets — PrepPulse never commits a Gemini key.
+#
+# The key is entered in-app at runtime and lives in UserDefaults on the device.
+# The two other resolution paths (an Info.plist entry and a GEMINI_API_KEY
+# environment variable) are the ones that could leak into a commit, so any
+# xcconfig or dotenv carrying one is ignored here.
+# ---------------------------------------------------------------------------
+Secrets.xcconfig
+*.secret.xcconfig
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Tooling / editors
+# ---------------------------------------------------------------------------
+*.swp
+*~
+.idea/
+.vscode/
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
